@@ -19,6 +19,10 @@ h1 {
   padding: 10px;
 }
 
+.wreath {
+  position: relative; /* Required for positioning the description */
+}
+
 .gallery img {
   width: 200px;
   height: auto;
@@ -29,4 +33,21 @@ h1 {
 
 .gallery img:hover {
   transform: scale(1.1);
+}
+
+.description {
+  display: none; /* Hide descriptions initially */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  top: 0; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensure it appears above the image */
+}
+
+.wreath:hover .description {
+  display: block; /* Show description on hover */
 }
