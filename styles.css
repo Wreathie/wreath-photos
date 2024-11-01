@@ -42,15 +42,16 @@ h1 {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-  justify-content: center; /* Center the modal content */
-  align-items: center; /* Center the modal content */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%; /* Slightly increase max width */
+  max-height: 90%; /* Slightly increase max height */
+  object-fit: contain; /* Ensures image maintains aspect ratio */
+  margin: auto; /* Center it in the modal */
 }
 
 .close {
