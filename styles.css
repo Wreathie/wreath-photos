@@ -31,39 +31,6 @@ h1 {
   transform: scale(1.1);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
-h1 {
-  color: #333;
-  margin: 20px 0;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-.gallery img {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-}
-
-.gallery img:hover {
-  transform: scale(1.1);
-}
-
 /* Modal styles */
 .modal {
   display: none; /* Hidden by default */
@@ -84,23 +51,6 @@ h1 {
   display: block;
   max-width: 80%;
   max-height: 80%;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .close {
