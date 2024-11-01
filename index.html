@@ -9,10 +9,19 @@
 <body>
   <h1>Wreath Photo Album</h1>
   <div class="gallery">
-    <img src="images/wreath1.jpg" alt="Wreath 1">
-    <img src="images/wreath2.jpg" alt="Wreath 2">
-    <img src="images/wreath3.jpg" alt="Wreath 3">
+    <img src="images/wreath1.jpg" alt="Wreath 1" class="gallery-item">
+    <img src="images/wreath2.jpg" alt="Wreath 2" class="gallery-item">
+    <img src="images/wreath3.jpg" alt="Wreath 3" class="gallery-item">
     <!-- Add more images as needed -->
   </div>
+
+  <!-- Modal for displaying the enlarged image -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
