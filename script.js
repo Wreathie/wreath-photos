@@ -9,7 +9,6 @@ for (let i = 0; i < images.length; i++) {
     var img = document.getElementById("img01");
     img.src = this.src; // Get the clicked image source
     var captionText = document.getElementById("caption");
-    captionText.innerHTML = this.alt; // Set caption to alt text
   }
 }
 
