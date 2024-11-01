@@ -10,13 +10,6 @@ for (let i = 0; i < images.length; i++) {
     img.src = this.src; // Get the clicked image source
     var captionText = document.getElementById("caption");
     captionText.innerHTML = this.alt; // Set caption to alt text
-
-    // Center the modal's content
-    img.onload = function() {
-      // Calculate the position of the modal content to center it
-      var modalContent = img.parentElement;
-      modalContent.style.marginTop = `${(window.innerHeight - img.offsetHeight) / 2}px`;
-    };
   }
 }
 
